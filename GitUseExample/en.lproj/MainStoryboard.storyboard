@@ -25,11 +25,18 @@
                                     <action selector="clickTheButton:" destination="2" eventType="touchUpInside" id="buZ-PI-zgi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP1-KC-Wvm">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nP1-KC-Wvm" firstAttribute="top" secondItem="3" secondAttribute="top" constant="194" id="E8m-bU-Ip9"/>
                             <constraint firstItem="htw-MH-2mg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="K3d-gv-S8Z"/>
                             <constraint firstItem="htw-MH-2mg" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Zpx-Qn-j9q"/>
+                            <constraint firstItem="nP1-KC-Wvm" firstAttribute="centerX" secondItem="htw-MH-2mg" secondAttribute="centerX" type="default" id="dDO-RK-y06"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +44,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickTheButton:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
