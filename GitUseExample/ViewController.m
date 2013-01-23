@@ -14,6 +14,11 @@
 
 @implementation ViewController
 
+-(void)clickTheButton:(id)sender
+{
+    NSLog(@"This button was clicked");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
